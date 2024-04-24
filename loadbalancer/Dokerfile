@@ -1,0 +1,8 @@
+# Usa la imagen oficial de Nginx como base
+FROM nginx
+
+# Copia el archivo de configuración personalizado de Nginx
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Exponer el puerto 443 para HTTPS
+EXPOSE 443
